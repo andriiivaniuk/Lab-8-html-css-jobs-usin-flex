@@ -1,1 +1,17 @@
-/* this is empty for test purpose */
+/* this is empty for test pgurpose */
+
+.jobsDesc{
+    width: 100%;
+    background-color: rgb(206, 113, 26);
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    flex-grow: 7;
+
+    & button{
+    background-color: rgb(149, 16, 16);
+    border-radius: 25%;
+    border-style: inset;
+    margin: 5px;
+    }
+}
