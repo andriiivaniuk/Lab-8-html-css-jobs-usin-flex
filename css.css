@@ -1,0 +1,81 @@
+header{
+    display: flex;
+    background-color: deepskyblue;
+    padding: 10px;
+    justify-content:space-between;
+  }
+
+  header > button, div > button {
+    color: white;
+    background-color:  rgb(255, 115, 0);
+    padding: 10px;
+    margin: 5px;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  article{
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(187, 149, 77);
+    min-width: 600px;
+  }
+
+  .desc{
+    margin-right: auto;
+  }
+
+  .date, .pric {
+    background-color: wheat;
+    margin: 1px;
+    width: 200px;
+    min-width: 200px;
+  }  
+
+  .desc, .date, .pric {
+    padding: 10px;
+  }
+
+  .section2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .article2{
+    display: flex;
+    min-width: 600px;
+  }
+
+  .jobsName{
+    width: 200px;
+    min-width: 200px;
+    background-color: rgb(149, 16, 16);
+  }
+
+  .jobsDesc{
+    width: 100%;
+    background-color: rgb(206, 113, 26);
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    flex-grow: 7;
+  }
+
+  .jobsDesc, .jobsName{
+    margin: 15px;
+    padding: 10px;
+    color: white;
+  }
+
+  .jobsDesc > button{
+    background-color: rgb(149, 16, 16);
+    border-radius: 25%;
+    border-style: inset;
+    margin: 5px;
+  }
