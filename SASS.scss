@@ -15,3 +15,35 @@
     margin: 5px;
     }
 }
+
+header, div {
+    button{
+        color: white;
+        background-color:  rgb(255, 115, 0);
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+@mixin SASSelement-style ($margin:0px, $padding: 0px,
+                            $display: flex, $background-color: white,
+                            $justify-content: left) 
+{
+    margin: $margin;
+    padding: $padding;
+    display: $display;
+    background-color: $background-color;
+    justify-content: $justify-content;
+}
+
+
+header {
+    @include SASSelement-style(0px, 10px, flex,
+     deepskyblue, space-between );
+}
+
+article{
+    @include SASSelement-style(0, 0, flex,
+     rgb(185, 136, 45), right);
+     margin-top: 20px;
+}

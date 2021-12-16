@@ -1,4 +1,4 @@
-
+/* this is empty for test pgurpose */
 .jobsDesc {
   width: 100%;
   background-color: #ce711a;
@@ -22,3 +22,36 @@
   border-style: inset;
   margin: 5px;
 }
+
+header button, div button {
+  color: white;
+  background-color: #ff7300;
+  padding: 10px;
+  margin: 5px;
+}
+
+header {
+  margin: 0px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: deepskyblue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #b9882d;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=SASS.css.map */
