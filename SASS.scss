@@ -1,5 +1,7 @@
 /* generated with Sass */
 
+$DEFpadd: 10px;
+
 .jobsDesc{
     width: 100%;
     background-color: rgb(206, 113, 26);
@@ -20,7 +22,7 @@ header, div {
     button{
         color: white;
         background-color:  rgb(255, 115, 0);
-        padding: 10px;
+        padding: $DEFpadd;
         margin: 5px;
     }
 }
@@ -38,7 +40,7 @@ header, div {
 
 
 header {
-    @include SASSelement-style(0px, 10px, flex,
+    @include SASSelement-style(0px, $DEFpadd, flex,
      deepskyblue, space-between );
 }
 
@@ -47,3 +49,4 @@ article{
      rgb(185, 136, 45), right);
      margin-top: 20px;
 }
+
