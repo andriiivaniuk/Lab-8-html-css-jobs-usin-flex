@@ -1,16 +1,14 @@
-header{
-    display: flex;
-    background-color: deepskyblue;
-    padding: 10px;
-    justify-content:space-between;
-  }
-
-  header > button, div > button {
-    color: white;
-    background-color:  rgb(255, 115, 0);
-    padding: 10px;
-    margin: 5px;
-  }
+header {
+  margin: 0px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: deepskyblue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
   section{
     display: flex;
@@ -18,12 +16,17 @@ header{
     padding: 10px;
   }
 
-  article{
-    margin-top: 20px;
+  article {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: right;
-    background-color: rgb(187, 149, 77);
-    min-width: 600px;
+    background-color: #b9882d;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    margin-top: 20px;
   }
 
   .desc{
@@ -58,24 +61,39 @@ header{
     background-color: rgb(149, 16, 16);
   }
 
-  .jobsDesc{
+  .jobsDesc {
     width: 100%;
-    background-color: rgb(206, 113, 26);
+    background-color: #ce711a;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-between;
-    align-items: flex-end;
-    flex-grow: 7;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-flex: 7;
+        -ms-flex-positive: 7;
+            flex-grow: 7;
+  }
+  
+  .jobsDesc button {
+    background-color: #951010;
+    border-radius: 25%;
+    border-style: inset;
+    margin: 5px;
   }
 
-  .jobsDesc, .jobsName{
+   .jobsDesc, .jobsName{
     margin: 15px;
     padding: 10px;
     color: white;
   }
 
-  .jobsDesc > button{
-    background-color: rgb(149, 16, 16);
-    border-radius: 25%;
-    border-style: inset;
+  header button, div button {
+    color: white;
+    background-color: #ff7300;
+    padding: 10px;
     margin: 5px;
   }

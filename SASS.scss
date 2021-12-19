@@ -1,0 +1,52 @@
+/* generated with Sass */
+
+$DEFpadd: 10px;
+
+.jobsDesc{
+    width: 100%;
+    background-color: rgb(206, 113, 26);
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    flex-grow: 7;
+
+    & button{
+    background-color: rgb(149, 16, 16);
+    border-radius: 25%;
+    border-style: inset;
+    margin: 5px;
+    }
+}
+
+header, div {
+    button{
+        color: white;
+        background-color:  rgb(255, 115, 0);
+        padding: $DEFpadd;
+        margin: 5px;
+    }
+}
+
+@mixin SASSelement-style ($margin:0px, $padding: 0px,
+                            $display: flex, $background-color: white,
+                            $justify-content: left) 
+{
+    margin: $margin;
+    padding: $padding;
+    display: $display;
+    background-color: $background-color;
+    justify-content: $justify-content;
+}
+
+
+header {
+    @include SASSelement-style(0px, $DEFpadd, flex,
+     deepskyblue, space-between );
+}
+
+article{
+    @include SASSelement-style(0, 0, flex,
+     rgb(185, 136, 45), right);
+     margin-top: 20px;
+}
+
